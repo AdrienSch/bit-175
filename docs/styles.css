@@ -1,14 +1,23 @@
 body {
   font-family: Georgia, Helvetica, Arial, Sans-serif;
+  background-color: blue;
+}
+
+main {
+  background-color: rgb(31, 121, 223);
 }
 
 ol {
-   margin: 0;
-   display: inline; padding-left: 1em;
+  text-align: left;
 }
 
+
 li {
-  display: inline; padding-left: 1em;
-  margin-left: 1em;
+  display: inline; 
+  padding: 0.25em;
+  margin: 0.4em; 
+  /*
   border-left: 1px solid black;
+  */
 }
+
