@@ -8,7 +8,8 @@
     <title>BIT 175 Individual Project</title>
 </head>
 
-<!-- <script
+<!-- 
+<script
 src="https://code.jquery.com/jquery-3.6.4.min.js"
 integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
 crossorigin="anonymous"></script>
@@ -28,7 +29,23 @@ const settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
-</script> -->
+</script> 
+
+function fetchData() {
+  fetch(randomAPI)
+    .then(function(response) {
+      if (response.status !== 200) {
+        console.log(
+          `Looks like there was a problem. Status Code: ${response.status}`
+    )}
+
+else {
+console.log(response);
+}
+        );
+        return;
+      }
+-->
 
 <body>
     <h1 style="text-align: left; color: cyan;">Fall Guys Tips & Tricks</h1>
