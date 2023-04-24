@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
   font-family: Georgia, Helvetica, Arial, Sans-serif;
   background-color: black;
@@ -22,3 +23,19 @@ li {
   */
 }
 
+/* CLASSES */
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  padding-left: 0.5em;
+  margin: 0.5em;
+}
+
+.strong {
+  color: gold;
+}
+
+/* IDS */
