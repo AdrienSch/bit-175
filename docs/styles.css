@@ -1,16 +1,17 @@
 body {
   font-family: Georgia, Helvetica, Arial, Sans-serif;
-  background-color: blue;
+  background-color: black;
+  color: white;
 }
 
 main {
-  background-color: rgb(31, 121, 223);
+  background-color: black;
+  color: white;
 }
 
 ol {
   text-align: left;
 }
-
 
 li {
   display: inline; 
