@@ -9,30 +9,31 @@
     <title>Customer Service</title>
   </head>
   <body>
-    <h1>Welcome</h1>
+    <h1>Welcome Gamers</h1>
     <p>
       Welcome to our page on the Internet. In order to serve you better, please
       tell us about yourself and how we can help.
     </p>
     <form action="./customer-service.html">
       <p>
-        Your first name:
+        Your gamer tag:
         <br />
         <input id="first-name" size="30" />
       </p>
       <p>
-        Your last name:
+        Your competitive rank:
         <br />
         <input id="last-name" size="30" />
       </p>
+    
       <p>
         Title
         <br />
         <input type="radio" id="mr" name="title" value="Mr." />
-        <label for="mr">Mr.</label>
+        <label for="mr">Gamer</label>
         <br />
         <input type="radio" id="ms" name="title" value="Ms." />
-        <label for="ms">Ms.</label>
+        <label for="ms">Pro Player</label>
         <br />
         <input type="radio" id="coach" name="title" value="Coach" />
         <label for="coach" id="coach-label">Coach</label>
@@ -44,13 +45,15 @@
       </p>
 
       <div id="software">
-        <p>What kind of operating system and software are you using?</p>
+        <p>What kind of specs are you running in order to play Fortnite at the highest level?</p>
         <textarea cols="50" id="sw" onfocus="javascript:changeTitle()"></textarea>
       </div>
+
+  
     </form>
     <script>
       function changeTitle() {
-        /*let focuscounter = 1;
+        let focuscounter = 1;
         //alert(focuscounter);
         if (
           (document.getElementById("mr").checked = true) &&
@@ -58,7 +61,7 @@
         ) {
           document.getElementById("mr").checked = false;
           document.getElementById("ms").checked = true;
-          alert("Neener neener, you're a girl!");
+          alert("You're a gamer!");
           //document.getElementById("sw").focus();
           focuscounter++;
           console.log(focuscounter);
@@ -69,7 +72,7 @@
         ) {
           document.getElementById("ms").checked = false;
           document.getElementById("mr").checked = true;
-          alert("You don't look like a girl to me!");
+          alert("You don't look like a gamer to me!");
           document.getElementById("sw").focus();
           focuscounter++;
           console.log(focuscounter);
@@ -83,7 +86,7 @@
           focuscounter++;
           console.log(focuscounter);
           return;
-        } */
+        } 
         return;
       }
 
@@ -92,12 +95,12 @@
         if ((document.getElementById("mr").checked = true)) {
           age1 = age1 - 10;
           // subtract 10 years and call the customer a child
-          alert("dang, you're young!")
+          alert("You've got ways to go before you can become a pro!")
         }
         if ((document.getElementById("ms").checked = true)) {
           age1 = age1 + 10;
 
-          alert("dang, you're old!");
+          alert("Okay, not bad. You've got what it takes to win the next FNCS World Cup!");
         }
         return;
       }
