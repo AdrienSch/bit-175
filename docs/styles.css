@@ -38,4 +38,134 @@ li {
   color: gold;
 }
 
-/* IDS */
+/* IDS FOR THE "INDEX" */
+
+#diving,
+#jumping,
+#grabbing,
+#waving,
+#levitation {
+        width: 33%;
+        padding: 2em;
+        margin: 2em;
+}
+
+/* WAVING ID SECTION */
+
+#waving-pic {
+  max-height: 1200px;
+  max-width: 900px;
+}
+
+#waving {
+  margin: 2em;
+}
+
+#waving-a {
+  position: relative;
+  top: 20px;
+}
+
+#waving-a-a {
+  position: relative;
+  top: 20px;
+  border: 1px solid gold; 
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+}
+
+/* GRABBING ID SECTION */ 
+
+#grabbing-pic {
+  max-height: 1200px;
+  max-width: 900px;
+}
+
+#grabbing {
+  margin: 2em;
+}
+
+#grabbing-a {
+  position: relative;
+  top: 20px;
+}
+
+#grabbing-a-a {
+  position: relative;
+  top: 20px;
+  border: 1px solid gold; 
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+}
+
+/* JUMPING ID SECTION */
+
+#jumping-pic {
+  max-height: 1200px;
+  max-width: 900px;
+}
+
+#jumping {
+  margin: 2em;
+}
+
+#jumping-a {
+  position: relative;
+  top: 20px;
+}
+
+#jumping-a-a {
+  position: relative;
+  top: 20px;
+  border: 1px solid gold; 
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+}
+
+/* DIVING ID SECTION */
+
+#diving-pic {
+  max-height: 1200px;
+  max-width: 900px;
+}
+
+#diving {
+  margin: 2em;
+}
+
+#diving-a {
+  position: relative;
+  top: 20px;
+}
+
+#diving-a-a {
+  position: relative;
+  top: 20px;
+  border: 1px solid gold; 
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+}
+
+/* LEVITATION ID SECTION */
+
+#levitation-pic {
+  max-height: 1200px;
+  max-width: 900px;
+}
+
+#levitation {
+  margin: 2em;
+}
+
+#levitation-a {
+  position: relative;
+  top: 20px;
+}
+
+#levitation-a-a {
+  position: relative;
+  top: 20px;
+  border: 1px solid gold; 
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+}
