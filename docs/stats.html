@@ -16,10 +16,10 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet" type="text/css" />
-    <title>BIT 175 Individual Project - Fall Guys Tips and Tricks: Personal Stats</title>
+    <title>BIT 175 Individual Project - Fall Guys Tips and Tricks: Stats</title>
 </head>
 <!--
-    THIS PAGE IS GOING TO BE RESERVED FOR THE API.
+    THIS PAGE IS GOING TO BE RESERVED FOR THE API AND THE INTERACTIVE JAVASCRIPT FEATURE.
 -->
 <body>
     <h1 style="text-align: left; color: white;" class="left">Fall Guys Tips & Tricks</h1>
@@ -32,8 +32,55 @@
         <li><a href="contact.html">Contact</a></li>
     </ol>
     
-    <h2 class="center">Personal Stats</h2>
+    <h2 class="center">Stats: Interactive Feature & Weather API</h2>
+
+    <h1 class="name">Fall Guy Name: <span id="name"></span></h1>
+    <button class="btn" id="makeName" onclick="makeName()" style="color: gold;">CHANGE NAME HERE!</button>
+        <script>
+            var generatedName = null;       
+            makeName = function () {         
+                var names1 = ["Classic", "Super","Bonkers","Noble","Great","Flying"];         
+                var names2 = ["Crying", "Laughing", "Weeping","Fall","Smiling","Achieving"];         
+                var names3 = ["Skelly", "Eggbert", "Dorene","Tea","Lightning","Streamer"];         
+                var name1 = names1[Math.floor(Math.random() * names1.length)];         
+                var name2 = names2[Math.floor(Math.random() * names2.length)];         
+                var name3 = names3[Math.floor(Math.random() * names3.length)];         
+                generatedName = name1 + " " + name2 + " " + name3;         
+                document.getElementById("name").innerHTML = generatedName;       };     
+        </script>
     
+    <section>
+    </section>
+        <script type="text/javascript">
+            async function getWeatherData() {
+                const requestURL = "https://api.weather.gov/gridpoints/SEW/129,75/forecast";
+                const request = new Request(requestURL);
+                const response = await fetch(request);
+                const weatherDataJson = await response.text();
+                const weatherData = JSON.parse(weatherDataJson);
+                displayWeatherData(weatherData);
+                console.log(weatherData);
+                }
+            function displayWeatherData(obj) {
+                const section = document.querySelector("section");
+                const wdTitle = document.createElement("h1");
+                wdTitle.textContent = "Weather forecast for Seattle";
+                section.appendChild(wdTitle);
+                const periods = obj.properties.periods;
+                for (const period of periods) {
+                    const name = period.name;
+                    const forecast = period.detailedForecast;
+                    const forecastPeriod = document.createElement("p");
+                    forecastPeriod.textContent = name + ": " + forecast;
+                    section.appendChild(forecastPeriod);
+                    }
+                }
+            getWeatherData();
+        </script>
+
+    <footer>
+        <p style="text-align: center; border: 1px solid white; border-left: black; border-right: black;">This site was made by Adrien Schildwachter.</p>
+    </footer>
 </main>
     
 </body>
