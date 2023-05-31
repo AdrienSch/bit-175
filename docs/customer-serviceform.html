@@ -9,6 +9,20 @@
     <title>Customer Service</title>
   </head>
   <body>
+    <h1 class="name">Are you a Gamer?! <span id="name"></span></h1>
+    <button class="btn" id="makeName" onclick="makeName()" style="color: gold;">CLICK HERE!</button>
+        <script>
+            var generatedName = null;       
+            makeName = function () {         
+                var names1 = ["No", "Yes","Maybe","Perhaps"];         
+                var names2 = ["you", "I am", "I","you are"];         
+                var names3 = ["are", "not","am"];         
+                var name1 = names1[Math.floor(Math.random() * names1.length)];         
+                var name2 = names2[Math.floor(Math.random() * names2.length)];         
+                var name3 = names3[Math.floor(Math.random() * names3.length)];         
+                generatedName = name1 + " " + name2 + " " + name3;         
+                document.getElementById("name").innerHTML = generatedName;       };     
+        </script>
     <h1>Welcome Gamers</h1>
     <p>
       Welcome to our page on the Internet. In order to serve you better, please
