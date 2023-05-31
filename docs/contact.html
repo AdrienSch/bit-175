@@ -33,6 +33,21 @@
     <h2 class="center">Contact</h2>
     <a href="https://discord.com/invite/fallguys"><h2 class="center" style="color: gold;">Fall Guys Discord Server</h2></a>
     <a href="https://www.reddit.com/r/FallGuysGame/"><h2 class="center" style="color: gold;">Fall Guys Subreddit</h2></a>
+
+    <h1 class="name">Name:<span id="name"></span></h1>
+    <button class="btn" id="makeName" onclick="makeName()">Generate</button>
+        <script>
+            var generatedName = null;       
+            makeName = function () {         
+                var names1 = ["Classic", "Super"];         
+                var names2 = ["Crying", "Laughing", "Weeping"];         
+                var names3 = ["Skelly", "Eggbert", "Dorene"];         
+                var name1 = names1[Math.floor(Math.random() * names1.length)];         
+                var name2 = names2[Math.floor(Math.random() * names2.length)];         
+                var name3 = names3[Math.floor(Math.random() * names3.length)];         
+                generatedName = name1 + " " + name2 + " " + name3;         
+                document.getElementById("name").innerHTML = generatedName;       };     
+        </script> 
 </main>
     
 </body>
